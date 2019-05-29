@@ -12,16 +12,18 @@
 		92CA18B9229760E500AE88BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92CA18B7229760E500AE88BB /* Main.storyboard */; };
 		92CA18BB229760EB00AE88BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92CA18BA229760EB00AE88BB /* Assets.xcassets */; };
 		92CA18BE229760EB00AE88BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92CA18BC229760EB00AE88BB /* LaunchScreen.storyboard */; };
+		92CA18C6229C955200AE88BB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA18C5229C955100AE88BB /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		92CA18B0229760E400AE88BB /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CA18B3229760E400AE88BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92CA18B5229760E400AE88BB /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
+		92CA18B5229760E400AE88BB /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodoListViewController.swift; path = ../TodoListViewController.swift; sourceTree = "<group>"; };
 		92CA18B8229760E500AE88BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92CA18BA229760EB00AE88BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92CA18BD229760EB00AE88BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92CA18BF229760EB00AE88BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92CA18C5229C955100AE88BB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Item.swift; path = ../Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,46 @@
 			isa = PBXGroup;
 			children = (
 				92CA18B3229760E400AE88BB /* AppDelegate.swift */,
-				92CA18B5229760E400AE88BB /* TodoListViewController.swift */,
-				92CA18B7229760E500AE88BB /* Main.storyboard */,
-				92CA18BA229760EB00AE88BB /* Assets.xcassets */,
-				92CA18BC229760EB00AE88BB /* LaunchScreen.storyboard */,
+				92CA18C8229CD05A00AE88BB /* Controllers */,
+				92CA18C7229CCEB800AE88BB /* Data Model */,
+				92CA18C9229CD14F00AE88BB /* Views */,
+				92CA18CA229CD16C00AE88BB /* Supprting Files */,
 				92CA18BF229760EB00AE88BB /* Info.plist */,
 			);
 			path = ToDoList;
+			sourceTree = "<group>";
+		};
+		92CA18C7229CCEB800AE88BB /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				92CA18C5229C955100AE88BB /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		92CA18C8229CD05A00AE88BB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				92CA18B5229760E400AE88BB /* TodoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		92CA18C9229CD14F00AE88BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92CA18B7229760E500AE88BB /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		92CA18CA229CD16C00AE88BB /* Supprting Files */ = {
+			isa = PBXGroup;
+			children = (
+				92CA18BA229760EB00AE88BB /* Assets.xcassets */,
+				92CA18BC229760EB00AE88BB /* LaunchScreen.storyboard */,
+			);
+			path = "Supprting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92CA18B6229760E400AE88BB /* TodoListViewController.swift in Sources */,
+				92CA18C6229C955200AE88BB /* Item.swift in Sources */,
 				92CA18B4229760E400AE88BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
